@@ -1,0 +1,1033 @@
+/* titel font here 👇 
+font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+ */
+
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fire-brick: rgb(167, 61, 40);
+    --special-grey: rgb(232, 232, 232);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    position: sticky; /* Make header sticky */
+    padding: 20px;
+    top: 0;
+    z-index: 1000; /* Ensure header stays above other content */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute items evenly */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.left-nav ul {
+    display: flex;
+    /* Remove default list styles */
+    list-style: none;
+    cursor: pointer;
+}
+
+.left-nav ul li {
+    /* Optional: Add some spacing between list items */
+    padding-right: 24px;
+    font-size: 1rem;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: "wght" 700;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logo {
+   display: flex;
+   width: 35%;
+}
+
+.right-nav i {
+    font-size: 2.5rem;
+}
+
+
+/* styling drop down 👇 */
+
+/* shop👇 */
+
+.all-clothing__accessories-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    list-style: none;
+    padding-top: 3%;
+}
+.shop-nav-container {
+    display: flex;
+    /* align-items: stretch;  */
+    gap: 70%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    background-color: #f0f0f1;
+}
+
+.shop-left-area{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 3%;
+    cursor: pointer;
+}
+
+.shop-right-area{
+    margin-left: 10%;
+}
+
+.all-clothing{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: bold;  
+    
+}
+.all-clothing-li{
+    padding-top: 5%;
+    
+}
+
+.shop-left-area {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    flex: 1; /* Allow flex-grow to fill the available space */
+}
+.shop-left-area ul li {
+    list-style: none;
+    padding-top: 10%;
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+}
+
+.shop-right-area{
+    padding-top: 3%;
+    padding-right: 16%;
+}
+
+
+.accessories{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: bold;  
+}
+
+.accessories-li{
+    padding-top: 5%;
+    
+}
+.accessories-li li{
+    list-style: none;
+    padding-top: 6%;
+}
+
+.all-clothing__accessories-container li{
+    color: grey;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    cursor: pointer;
+}
+.all-clothing__accessories-container li:hover{
+    color: black;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+
+
+/* om os 👇 */
+.om-os-nav-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    background-color: #f0f0f1;
+    cursor: pointer;
+}
+.om-os-nav-area{
+    display: flex;
+    gap: 20%;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-left: 35%;
+}
+
+
+
+.bæredygtighed{
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+}
+.vision-mission-vædier {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+}
+
+
+
+/* styling front page video 👇 */
+.video-section {
+    position: relative; /* Change to relative positioning */
+    height: 100vh; /* Adjust the height as needed */
+}
+
+.font-page-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front-page-btn-h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+    gap: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.front-page-h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 700;
+    font-size: 1.7rem;
+}
+    .arrow {
+        display: flex;
+        position: absolute;
+        margin-top: 45%;
+        padding-left: 46%;
+    }
+
+.btn {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.snap{
+    height: 80%;
+    max-width: 70vh;
+    border-radius: 10px;
+    margin-right: 60%;
+    padding-top: 8%;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.arrow-container {
+    position: absolute;
+    bottom: 20px;
+    /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-down {
+    font-size: 2rem;
+    color: var(--fire-brick);
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* bestseller 👇 */
+
+
+
+.bestseller-titel{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+
+
+/* Scroll CSS */
+/* Scroll CSS */
+.product-gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.product-front-page {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of child elements */
+    padding: 20px; /* Add some padding */
+    padding-top: 10%;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.product-container {
+    display: inline-block; /* Display child elements in a row */
+    text-align: center; /* Center align text */
+    margin-right: 20px; /* Add some space between products */
+    width: 400px; /* Increase the width for product containers */
+    font-family: "fractul-variable", sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.product-container:hover {
+    transform: translateY(-10px); /* Lift the product up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow for a 3D effect */
+}
+
+.product-img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ccc; /* Add a border to images */
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+.product-container:hover .product-img {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+.product-details {
+    margin-top: 10px; /* Space between image and details */
+}
+
+.product-name {
+    display: block;
+    margin-bottom: 5px; /* Space between name and price */
+    font-weight: 700; /* Ensuring a bold font weight */
+    font-size: 18px; /* Increase the font size */
+    color: #000; /* Make the font color black for darkness */
+}
+
+.product-price {
+    display: block;
+    color: #555; /* A darker gray for the price */
+    font-size: 16px; /* Adjust the font size if needed */
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(226, 46, 46, 0.5);
+    border: none;
+    color: white;
+    padding: 30px; /* Increased padding for bigger buttons */
+    cursor: pointer;
+    z-index: 1;
+    font-size: 36px; /* Increased font size for bigger buttons */
+    display: flex; /* Center content vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+}
+
+.left-button {
+    left: 10px;
+}
+
+.right-button {
+    right: 10px;
+}
+
+.scroll-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* bestseller 👆 */
+
+
+
+
+
+
+
+/* instagram area 👇 */
+
+.instagram-titel{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: -10%
+}
+
+
+.instagram-area{
+    padding-top: 20%;
+}
+.instagram-post-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.ig-img{
+    height: auto;
+    width: 25%;
+}
+.ig-img:hover{
+    border-radius: 10px;
+}
+
+
+/* instagram  area 👆 */
+
+
+/* footer area 👇 */
+
+.footer-area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding-bottom: 10%;
+}
+.footer-tekst-container{
+    display: flex;
+    gap: 25%;
+    justify-content: center;
+}
+.line-black{
+  height: auto;
+   width: 90%;
+   padding-left: 10%;
+}
+
+
+.brand-container p{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    padding-bottom: 18%;
+    cursor: pointer;
+}
+.support-container p{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    padding-bottom: 5%;
+    cursor: pointer;
+}
+.juridiske-info-container p {
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    padding-bottom: 6%;
+    cursor: pointer;
+
+}
+.brand-container li, 
+.support-container li,
+.juridiske-info-container li {
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 15px;
+    list-style: none;
+    padding-top: 10%;
+    color: #989595;
+    cursor: pointer;
+    gap: 10px;
+}
+
+
+.brand-container li:hover,
+.support-container li:hover,
+.juridiske-info-container li:hover {
+    /* Change text color on hover */
+    color: #000000;
+    /* Add any other styles you want to apply on hover */
+}
+
+.icons-container{
+    display: flex;
+    gap: 2%;
+    padding-left: 13%;
+    height: auto;
+    width: 150%;
+}
+
+
+
+
+/* footer area 👆 */
+
+
+
+
+
+
+
+
+/* email container section 👇 */
+.email-member-section {
+    /* background-color: white; */
+    /* Black background color for the section */
+    color: white;
+    /* Text color */
+    padding: 20px;
+    /* Add some padding */
+    position: relative; /* Change to relative positioning */
+    margin-top: 0%; /* Adjust margin to create space between sections */
+    margin-bottom: 3%; /* Adjust margin to create space between sections */
+
+}
+
+.email-container {
+    width: 80%;
+    /* Set width of the container */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    text-align: center;
+    /* Center text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.input-area {
+    display: flex;
+    gap: 2rem;
+    padding-left: 30%;
+}
+
+.email-container h2 {
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 3rem;
+    /* Adjust heading font size */
+    margin-bottom: 10px;
+    color: var(--fire-brick);
+    /* Add some space below the heading */
+    margin-top: -70%;
+}
+
+.email-container p {
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    /* Adjust paragraph font size */
+    margin-bottom: 20px;
+    color: #000000;
+    /* Add some space below the paragraph */
+}
+
+.email-container span{
+    color: var(--fire-brick);
+}
+
+.email-container input[type="text"] {
+    width: 40%;
+    /* Set input field width to 100% */
+    padding: 10px;
+    /* Add some padding */
+    margin-bottom: -0px;
+    /* Add some space below the input field */
+    font-size: 18px;
+    border: 2px solid black; /* Add a black border */
+
+}
+
+.email-container input[type="submit"] {
+    background-color: white;
+    /* Use the fire-brick color for the button background */
+    color: var(--fire-brick);
+    /* Text color */
+    border: 2px solid black; /* Add a black border */
+    /* Remove border */
+    padding: 10px 20px;
+    /* Add padding */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    font-size: 18px;
+}
+.email-container input[type="submit"]:hover {
+    background-color: var(--fire-brick);
+    color: white; /* Change text color on hover if needed */
+}
+
+
+
+/* thank you message */
+.thank-you-message-container {
+    background: #000000;
+    height: 400px; /* Adjust height as needed */
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack items vertically */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+}
+.thank-you-message-h2-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.thank-you-message-container h2 {
+    color: var(--fire-brick);
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 4rem;
+    padding-bottom: 4%;
+}
+
+.thank-you-message-container p {
+    color: #fff;
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 1.5rem;
+}
+
+.foglos{
+    display: flex;
+    width: 45%;
+    font-weight: 580;
+    font-size: 1.3rem;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 4%;
+    margin-top: -2%;
+    line-height: 1.6;
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+
+}
+
+.menace{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(243, 151, 151);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  myBtn i{
+    color: white;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+
+
+
+
+
+
+
+/* hiding mobile nav */
+  .mobile-nav {
+    display: none;
+}
+.sidebar {
+    display: none;
+}
+.video-section-mobile{
+    display: none;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.btn-mobile{
+    display: none;
+}
+
+/* for iphone 12 pro  */
+@media (max-width: 768px) {
+
+
+    /* hiding header destop nav */
+    header{
+        display: none;
+    }
+        
+
+        /* hide front page video  */
+        .video-section{
+            display: none;
+        }
+
+        
+        /* show fron page img  */
+        .video-section-mobile{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+ 
+    .sidebar {
+         display: block;
+        position: sticky; 
+    }
+   
+    .logo-mobile{
+        display: flex;
+        width: 97%;
+        padding-left: 30%;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+       
+    }
+
+    .arrow{
+        display: flex;
+        position: absolute;
+        color: #000;
+        top: 20%;
+        left: 10%;
+    }
+    
+
+    .test-div {
+        width: 100%;
+        height: 40px;
+        z-index: 100;
+        position: sticky;
+        top: 0;
+        background-color: red;
+    }
+
+    .mobile-nav {
+        display: block;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .burger-menu {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .burger-icon {
+        display: inline-block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        position: relative;
+    }
+
+    .burger-icon::before,
+    .burger-icon::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        position: absolute;
+    }
+
+    .burger-icon::before {
+        top: -8px;
+    }
+
+    .burger-icon::after {
+        top: 8px;
+    }
+
+    .mid-nav h1 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    .right-nav i {
+        font-size: 1.5em;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 1;
+    }
+
+    .sidebar .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 20px;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .sidebar-menu {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .sidebar-menu li {
+        padding: 8px 16px;
+    }
+
+    .sidebar-menu li a {
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidebar-menu li a:hover {
+        color: #f1f1f1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* front page  */
+
+    .font-page-video-mobile {
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    .front-page-btn-h2-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center items horizontally */
+        gap: 2rem;
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100000;
+    }
+    
+   
+    .btn-mobile {
+        display: block; /* Make the button visible on mobile */
+        background-color: transparent;
+        color: #ffffff;
+        padding: 15px 30px; /* Increase padding for better touch interaction */
+        font-size: 1.2rem; /* Adjust font size */
+        border: 2px solid #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 20px; /* Adjust margin for spacing */
+    }
+    
+    .btn-mobile:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    
+    .front-page-h1{
+        padding-left: 18%;
+    }
+    .bestseller-titel {
+        font-size: 2.5rem;
+        padding-top: 100%;
+    }
+    .product-front-page {
+        padding-left: 15%;
+    }
+    .instagram-titel {
+        font-size: 2.5rem;
+    }
+    .foglos{
+        display: flex;
+    width: 62%;
+    font-weight: 580;
+    font-size: 17px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 4%;
+    margin-top: 0%;
+    line-height: 1.6;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    }
+
+    .instagram-post-container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .ig-img{
+        height: auto;
+        width: 100%;
+    }
+    .menace {
+        height: auto;
+        width: 100%;
+        margin-top: 33%;
+    }
+    .email-container p{
+        font-size: 20px;
+    }
+    .email-container h2{
+        margin-top: -9%;
+    }
+    .input-area{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 0%;
+    }
+    .email-container input[type="text"]{
+        width: 100%;
+    }
+    .email-container input[type="submit"]{
+        background-color: white;
+    color: var(--fire-brick);
+    border: 2px solid black;
+    padding: 5px 50px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 58%;
+    margin-left: 20%;
+    margin-top: -6%;
+    }
+
+
+    .thank-you-message-container {
+        background: #000000;
+        height: 400px; /* Adjust height as needed */
+        width: 90%;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        flex-direction: column; /* Stack items vertically */
+        margin: 0 auto; /* Center the container horizontally */
+        margin-top: 20%;
+        margin-bottom: 20%;
+    
+    }
+    .thank-you-message-container h2 {
+        color: var(--fire-brick);
+        font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+        font-size: 1.5rem;
+        padding-bottom: 4%;
+    }
+    
+    .thank-you-message-container p {
+        color: #fff;
+        font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+        font-size: 15px;
+    }
+    .footer-area {
+        padding-top: 26%;
+    }
+    .footer-tekst-container{
+        flex-direction: column;
+    margin-left: 34%;
+    margin-bottom: 37%;
+    }
+    .support-container{
+        padding-top: 25%;
+    }
+    .juridiske-info-container{
+        padding-top: 25%;
+    }
+    .icons-container {
+        margin-top: -122px;
+    margin-bottom: 31%;
+    }
+   
+}
