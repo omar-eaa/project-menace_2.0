@@ -1,0 +1,587 @@
+.bar,.foo {
+  color: red
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+:root {
+  --fire-brick: rgb(167, 61, 40);
+  --special-grey: rgb(232, 232, 232)
+}
+
+.logo,body {
+  display: flex
+}
+
+body {
+  flex-direction: column
+}
+
+.logo {
+  width: 35%
+}
+
+header {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px
+}
+
+.mid-nav img,header nav {
+  display: flex;
+  align-items: center
+}
+
+header nav {
+  justify-content: space-between
+}
+
+.left-nav ul {
+  display: flex;
+  list-style: none
+}
+
+.left-nav ul li {
+  padding-right: 24px;
+  font-size: 1rem;
+  font-family: "fractul-variable",sans-serif;
+  font-variation-settings: "wght"700;
+  font-weight: 600
+}
+
+.left-nav ul li a,.right-nav ul li a {
+  text-decoration: none;
+  color: #000
+}
+
+.left-nav ul li a:hover,.right-nav ul li a:hover {
+  color: #a73828
+}
+
+.mid-nav img {
+  width: 35%;
+  margin-left: 10%
+}
+
+.right-nav i {
+  font-size: 2.5rem
+}
+
+.all-clothing__accessories-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20%;
+  list-style: none;
+  padding-top: 3%
+}
+
+.shop-nav-container {
+  display: flex;
+  gap: 70%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  background-color: #e4e2e2
+}
+
+.shop-left-area {
+  padding-left: 3%
+}
+
+.shop-right-area {
+  margin-left: 10%
+}
+
+.all-clothing {
+  font-family: "fractul-variable",sans-serif;
+  font-variation-settings: "wght"400;
+  font-weight: 700
+}
+
+.all-clothing-li {
+  padding-top: 5%
+}
+
+.shop-left-area {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3%;
+  flex: 1
+}
+
+.shop-left-area ul li {
+  list-style: none;
+  padding-top: 10%
+}
+
+.shop-right-area {
+  padding-top: 3%;
+  padding-right: 16%
+}
+
+.accessories,.shop-left-area ul li {
+  font-family: "fractul-variable",sans-serif;
+  font-variation-settings: "wght"400
+}
+
+.accessories {
+  font-weight: 700
+}
+
+.accessories-li {
+  padding-top: 5%
+}
+
+.accessories-li li {
+  list-style: none;
+  padding-top: 6%
+}
+
+.all-clothing__accessories-container li {
+  color: gray;
+  font-family: "fractul-variable",sans-serif;
+  font-variation-settings: "wght"400
+}
+
+.all-clothing__accessories-container li:hover,.brand-container li,.juridiske-info-container li,.support-container li {
+  color: #000;
+  font-family: "fractul-variable",sans-serif;
+  font-variation-settings: "wght"400
+}
+
+.om-os-nav-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+  background-color: #e4e2e2
+}
+
+.om-os-nav-area {
+  display: flex;
+  gap: 20%;
+  padding-top: 5%;
+  padding-left: 35%
+}
+
+.bæredygtighed,.om-os-nav-area,.vision-mission-vædier {
+  font-family: "fractul-variable",sans-serif;
+  font-variation-settings: "wght"400;
+  font-weight: 700
+}
+
+.lookbook-section {
+  position: relative
+}
+
+.lookbook-title {
+  text-align: center;
+  font-family: "Fractul Variable",sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 30px
+}
+
+.quote {
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 40px
+}
+
+.lookbook {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px
+}
+
+.lookbook-item {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  transition: transform .3s
+}
+
+.lookbook-item img {
+  width: 100%;
+  height: auto;
+  cursor: pointer
+}
+
+.lookbook-item:hover {
+  transform: scale(1.05)
+}
+
+.indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255,255,255,.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: .8rem
+}
+
+
+
+
+
+
+
+/* footer area 👇 */
+
+.footer-area{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 20%;
+  padding-bottom: 10%;
+}
+.footer-tekst-container{
+  display: flex;
+  gap: 25%;
+  justify-content: center;
+}
+.line-black{
+height: auto;
+ width: 90%;
+ padding-left: 10%;
+}
+
+
+.brand-container p{
+  font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+  font-size: 2rem;
+  padding-bottom: 18%;
+  cursor: pointer;
+}
+.support-container p{
+  font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+  font-size: 2rem;
+  padding-bottom: 5%;
+  cursor: pointer;
+}
+.juridiske-info-container p {
+  font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+  font-size: 2rem;
+  padding-bottom: 6%;
+  cursor: pointer;
+
+}
+.brand-container li, 
+.support-container li,
+.juridiske-info-container li {
+  font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+  font-size: 15px;
+  list-style: none;
+  padding-top: 10%;
+  color: #989595;
+  cursor: pointer;
+  gap: 10ox;
+}
+
+
+.brand-container li:hover,
+.support-container li:hover,
+.juridiske-info-container li:hover {
+  /* Change text color on hover */
+  color: #000000;
+  /* Add any other styles you want to apply on hover */
+}
+
+.icons-container{
+  display: flex;
+  gap: 2%;
+  padding-left: 13%;
+  height: auto;
+  width: 150%;
+}
+
+
+
+
+/* footer area 👆 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aside {
+  display: none;
+}
+
+.sidebar {
+  display: none;
+}
+
+
+
+@media (max-width:768px) {
+
+   /* hiding header destop nav */
+ header{
+  display: none;
+}
+
+
+
+aside {
+display: block;
+top: 0;
+
+}
+
+.sidebar {
+   display: block;
+  position: sticky; 
+}
+
+.logo-mobile{
+  display: flex;
+  width: 97%;
+  padding-left: 30%;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+ 
+}
+
+aside {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.burger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.burger-icon {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  position: relative;
+}
+
+.burger-icon::before,
+.burger-icon::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+}
+
+.burger-icon::before {
+  top: -8px;
+}
+
+.burger-icon::after {
+  top: 8px;
+}
+
+.mid-nav h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.right-nav i {
+  font-size: 1.5em;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  padding: 8px 16px;
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar-menu li a:hover {
+  color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+  .lookbook {
+      flex-direction: column
+  }
+
+  .lookbook-item {
+      flex: none;
+      width: 100%
+  
+}
+
+
+  .lookbook-title {
+      font-size: 1.5rem;
+      margin-top: 20px
+  }
+
+  .quote {
+      margin-bottom: 30px
+  }
+
+
+
+  .lookbook-title {
+      font-size: 1.2rem;
+      margin-top: 10px
+  }
+
+  .quote {
+      margin-bottom: 20px
+  }
+
+
+.footer-area {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+  padding-bottom: 10%
+}
+
+.footer-tekst-container {
+  display: flex;
+  gap: 25%;
+  justify-content: center
+}
+
+.line-black {
+  height: auto;
+  width: 90%;
+  padding-left: 10%;
+  padding-top: 2%
+}
+
+.brand-container p,.juridiske-info-container p,.support-container p {
+  font-family: "fractul-variable",sans-serif;
+  font-variation-settings: "wght"400;
+  font-size: 2rem;
+  cursor: pointer
+}
+
+.brand-container li,.juridiske-info-container li,.support-container li {
+  font-size: 15px;
+  list-style: none;
+  padding-top: 10px;
+  color: #989595;
+  cursor: pointer
+}
+
+.brand-container li:hover,.juridiske-info-container li:hover,.support-container li:hover {
+  color: #000
+}
+
+.icons-container {
+  display: flex;
+  gap: 2%;
+  padding-left: 13%
+}
+
+.sidebar,aside {
+  display: block;
+}
+
+
+  .footer-area {
+      padding-bottom: 5%;
+      padding-left: 10%;
+      text-align: center
+  }
+
+  .footer-tekst-container {
+      flex-direction: column;
+      gap: 2rem
+  }
+
+  .line-black {
+      width: 130%;
+      padding-left: 0
+  }
+
+  .icons-container {
+      padding-left: 0;
+      justify-content: center
+  }
+
+
+}
