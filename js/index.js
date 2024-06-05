@@ -1,5 +1,4 @@
 // arrow down click
-
 document.addEventListener("DOMContentLoaded", function () {
   const arro = document.getElementById("arro");
   arro.addEventListener("click", function () {
@@ -9,15 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Get the shop element
 const shopElement = document.getElementById("shop");
-
 const omOsElement = document.getElementById("omOs");
 
 // Get the shop nav container
 const shopNavContainer = document.getElementById("shop-nav-container");
-// get the om os nav container
+// Get the om os nav container
 const omOsNavContainer = document.getElementById("om-os-nav-container");
 
-// hiding containers
+// Hiding containers
 shopNavContainer.style.display = "none";
 omOsNavContainer.style.display = "none";
 
@@ -46,7 +44,7 @@ omOsNavContainer.addEventListener("mouseleave", () => {
   omOsNavContainer.style.display = "none";
 });
 
-// arrow left and right 👇
+// Arrow left and right scrolling
 function scrollContainerLeft() {
   const container = document.querySelector(".product-front-page");
   container.scrollLeft -= 400; // Adjust the value to control the scroll amount
@@ -56,10 +54,8 @@ function scrollContainerRight() {
   const container = document.querySelector(".product-front-page");
   container.scrollLeft += 400; // Adjust the value to control the scroll amount
 }
-// arrow left and right 👆
 
-// thank you message 📧👇
-
+// Thank you message
 const subscribeButton = document.getElementById("subscribeButton");
 const messageContainer = document.getElementById("messageContainer");
 const emailSection = document.getElementById("emailSection");
@@ -76,10 +72,33 @@ subscribeButton.addEventListener("click", function () {
   }, 3000);
 });
 
-// link connection area 👇
+// Links and paths
+const links = [
+  { id: "tShirt", path: "/html/404.html" },
+  { id: "jackets", path: "/html/404.html" },
+  { id: "jeans", path: "/html/404.html" },
+  { id: "jerseys", path: "/html/404.html" },
+  { id: "sweatshirts", path: "/html/404.html" },
+  { id: "lookBook", path: "/html/lookbook.html" },
+  { id: "baeredygtighed", path: "/html/404.html" },
+  { id: "vMv", path: "/html/404.html" },
+  { id: "capCap", path: "/html/404.html" },
+  { id: "shopHereButton", path: "/html/hoodies.html" },
+  { id: "shopHereButtonMobile", path: "/html/hoodies.html" },
+  { id: "comingSoon", path: "/html/comming-soon.html" },
+];
 
-arrowDown;
-// arrow down click event
+// Add event listeners for navigation
+links.forEach((link) => {
+  const element = document.getElementById(link.id);
+  if (element) {
+    element.addEventListener("click", function () {
+      window.location.href = link.path;
+    });
+  }
+});
+
+// Arrow down click event
 document.addEventListener("DOMContentLoaded", function () {
   const arrowDown = document.getElementById("arrowDown");
   arrowDown.addEventListener("click", function () {
@@ -87,109 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (bestsellerBtn) {
       bestsellerBtn.scrollIntoView({ behavior: "smooth" });
     }
-  });
-});
-
-// link to heavyweightHoodie
-document.addEventListener("DOMContentLoaded", function () {
-  const heavyweightHoodie = document.getElementById("heavyweightHoodie");
-  heavyweightHoodie.addEventListener("click", function () {
-    window.location.href = "../html/havyhoodies.html";
-  });
-});
-// link to bæredygtighed
-document.addEventListener("DOMContentLoaded", function () {
-  const bæredygtighed = document.getElementById("bæredygtighed");
-  bæredygtighed.addEventListener("click", function () {
-    window.location.href = "../html/bearedygtighed.html";
-  });
-});
-
-// link to vision mision vædier
-document.addEventListener("DOMContentLoaded", function () {
-  const vMv = document.getElementById("vMv");
-  vMv.addEventListener("click", function () {
-    window.location.href = "../html/Om-os.html";
-  });
-});
-
-// link to coming zoon
-document.addEventListener("DOMContentLoaded", function () {
-  const comingSoon = document.getElementById("comingSoon");
-  comingSoon.addEventListener("click", function () {
-    window.location.href = "../html/comming-soon.html";
-  });
-});
-
-// link to t-shirt
-document.addEventListener("DOMContentLoaded", function () {
-  const tShirt = document.getElementById("tShirt");
-  tShirt.addEventListener("click", function () {
-    window.location.href = "/html/404.html";
-  });
-});
-
-// link to jackets
-document.addEventListener("DOMContentLoaded", function () {
-  const jackets = document.getElementById("jackets");
-  jackets.addEventListener("click", function () {
-    window.location.href = "/html/404.html";
-  });
-});
-
-// link to jeans
-document.addEventListener("DOMContentLoaded", function () {
-  const jeans = document.getElementById("jeans");
-  jeans.addEventListener("click", function () {
-    window.location.href = "/html/404.html";
-  });
-});
-
-// link to jerseys
-document.addEventListener("DOMContentLoaded", function () {
-  const jerseys = document.getElementById("jerseys");
-  jerseys.addEventListener("click", function () {
-    window.location.href = "/html/404.html";
-  });
-});
-
-// link to sweatshirts
-document.addEventListener("DOMContentLoaded", function () {
-  const sweatshirts = document.getElementById("sweatshirts");
-  sweatshirts.addEventListener("click", function () {
-    window.location.href = "/html/404.html";
-  });
-});
-
-// link to lookbook
-document.addEventListener("DOMContentLoaded", function () {
-  const lookBook = document.getElementById("lookBook");
-  lookBook.addEventListener("click", function () {
-    window.location.href = "";
-  });
-});
-
-// link to 404
-document.addEventListener("DOMContentLoaded", function () {
-  const baeredygtighed = document.getElementById("baeredygtighed");
-  baeredygtighed.addEventListener("click", function () {
-    window.location.href = "/html/404.html";
-  });
-});
-
-// link to 404
-document.addEventListener("DOMContentLoaded", function () {
-  const vMv = document.getElementById("vMv");
-  vMv.addEventListener("click", function () {
-    window.location.href = "/html/404.html";
-  });
-});
-
-// link to 404
-document.addEventListener("DOMContentLoaded", function () {
-  const capCap = document.getElementById("capCap");
-  capCap.addEventListener("click", function () {
-    window.location.href = "/html/404.html";
   });
 });
 
@@ -220,23 +136,5 @@ document.addEventListener("DOMContentLoaded", function () {
   const path = document.getElementById("path");
   path.addEventListener("click", function () {
     window.location.href = "../html/hoodies.html";
-  });
-});
-
-//  link to hoodie from shop here button
-document.addEventListener("DOMContentLoaded", function () {
-  const shopHereButton = document.getElementById("shopHereButton");
-  shopHereButton.addEventListener("click", function () {
-    window.location.href = "/html/hoodies.html";
-  });
-});
-
-shopHereButtonMobile;
-
-//  link to hoodie from shop here button mobile
-document.addEventListener("DOMContentLoaded", function () {
-  const shopHereButtonMobile = document.getElementById("shopHereButtonMobile");
-  shopHereButtonMobile.addEventListener("click", function () {
-    window.location.href = "/html/hoodies.html";
   });
 });
