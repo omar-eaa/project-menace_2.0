@@ -322,7 +322,6 @@ header nav {
 .product-img {
     width: 100%; /* Make images responsive */
     height: auto; /* Maintain aspect ratio */
-    border: 1px solid #ccc; /* Add a border to images */
     border-radius: 10px; /* Rounded corners for images */
     transition: transform 0.3s ease; /* Smooth transition for image scaling */
 }
@@ -418,6 +417,21 @@ header nav {
 
 
 /* instagram  area 👆 */
+
+
+.info{
+    margin: 0 auto;
+    height: 100vh;
+    width: 60%;
+    padding-top: 7%;
+    border-radius: 20px;
+}
+
+.info img {
+    max-width: 90%;
+    height: auto;
+}
+
 
 
 /* footer area 👇 */
@@ -1029,5 +1043,19 @@ header nav {
         margin-top: -122px;
     margin-bottom: 31%;
     }
+
+    .info{
+        margin: 0 auto;
+        height: 50vh;
+        width: 80%;
+        padding-top: 0%;
+        border-radius: 20px;
+    }
+    
+    .info img {
+        max-width: 90%;
+        height: auto;
+    }
    
 }
+
