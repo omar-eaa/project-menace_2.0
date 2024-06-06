@@ -1,0 +1,177 @@
+.info-box1-container{
+    display: flex;
+    padding-top: 4%;
+    width: 90%;
+
+
+}
+.info-box2-container{
+    display: flex;
+    padding-top: 4%;
+    width: 90%;
+
+}
+
+.info-box1-container ul{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 10%;
+}
+.info-box1-container ul li{
+    font-weight: 400;
+    font-size: 70%;
+    padding-top: 8%;
+   
+}
+
+.info-box2-container ul{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 10%;
+}
+.info-box2-container ul li{
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 8%;
+}
+
+/* styling pop up 👇 */
+
+.checkout-pop-up-container{
+    position: absolute;
+    top: 12%;
+    left: 60%;
+    background-color: white;
+    border: 5px solid #000;
+   padding-left: 4%;
+}
+/* .closeBtn{
+    font-size: 2rem;
+    font-weight: bold;
+} */
+.img-info-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.pop-up-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.inkøbskurv-x-container{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+    padding-top: 2%;
+    margin-left: 30%;
+    padding-bottom: 7%;
+}
+.pris-number-container{
+    display: flex;
+    flex-direction: row;
+    gap: 6.5rem;
+}
+.pris-number-container p{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.size-icon-container{
+    display: flex;
+    flex-direction: row;
+    gap: 6.5rem;
+}
+.size-icon-container span{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.pop-img{
+    height: auto;
+    max-width: 20%;
+    border: 2px solid #000;
+}
+.pop-titel{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+
+}
+
+.pop-up-checkout-button {
+    display: inline-block;
+    padding: 5px 15px;          /* Reduced padding for a smaller button */
+    background-color: black;    /* Set background to white */
+    color: white;               /* Text color */
+    font-size: 15px;            /* Reduced font size */
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    border: 2px solid black;    
+    border-radius: 5px;        
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    width: 30%;      
+    margin-left: 35%;
+   margin-top: 10%;
+   margin-bottom: 5%;
+}
+
+.pop-up-checkout-button:hover {
+    background-color: rgb(146, 145, 145);
+    color: white;
+    border: 2px solid rgb(146, 145, 145);  
+    transform: scale(1.05);              /* Slightly enlarge button on hover */
+}
+.inkøbskurv{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#xmark{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pop-size-s {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 40px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 1px;
+    border: 2px solid #d9d9d9;
+}
+/* .pop-size-s:hover{
+    background-color: black;
+    color: white;
+
+} */
+
+
+/* styling pop up 👆 */
+
+
+/* for iphone 12 pro  */
+@media (max-width: 768px) {
+
+
+.checkout-pop-up-container{
+    
+        
+        top: 70%;
+        left: 2%;
+        
+    
+}
+
+}
