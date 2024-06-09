@@ -30,6 +30,11 @@ header {
   z-index: 1000; /* Ensure header stays above other content */
 }
 
+.logo {
+  display: flex;
+  width: 35%
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
@@ -313,6 +318,7 @@ aside {
         width: 97%;
         padding-left: 30%;
     }
+    
     .logo {
       display: flex;
     width: 35%;
