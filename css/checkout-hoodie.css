@@ -69,6 +69,17 @@ header nav {
     font-size: 2.5rem;
 }
 
+#counter {
+    font-size: 1.5rem;
+    color: var(--fire-brick);
+    position: absolute;
+    left: 98%;
+    top: 9%;
+}
+#shoppingCart{
+    cursor: pointer;
+}
+
 
 /* styling drop down 👇 */
 

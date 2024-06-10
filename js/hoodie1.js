@@ -129,20 +129,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   color4.addEventListener("click", function () {
-    changeBigImage("/img improved/Hoodie (Brown Patched).webp");
+    changeBigImage("/img_improved/Hoodie (Brown Patched).webp");
   });
 
-  // pop up close btn 👇
+  // pop up close btn and shopping cart  👇
 
+  const counter = document.getElementById("counter");
+  const btn = document.getElementById("btn");
+  const shoppingCart = document.getElementById("shoppingCart");
   const popUp = document.getElementById("popUp");
   const closeBtn = document.getElementById("closeBtn");
+
+  // hide counter
+  counter.style.display = "none";
+
+  btn.addEventListener("click", function () {
+    counter.style.display = "block";
+    counter.textContent = "1";
+  });
 
   popUp.style.display = "none";
   closeBtn.style.fontSize = "2Rem";
   closeBtn.style.fontSize = "2Rem";
   closeBtn.style.fontWeight = "bold";
 
-  btn.addEventListener("click", function () {
+  // btn.addEventListener("click", function () {
+  //   popUp.style.display = "block";
+  // });
+  shoppingCart.addEventListener("click", function () {
     popUp.style.display = "block";
   });
 

@@ -13,6 +13,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
     <link rel="stylesheet" href="https://use.typekit.net/ncj3ldq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="/css/checkout-hoodie.css" />
     <link rel="stylesheet" href="/css/all-checkout.css" />
     <title>Document</title>
@@ -40,8 +44,13 @@
           /></a>
         </div>
 
-        <div class="right-nav">
-          <i class="fa-solid fa-cart-shopping"></i>
+        <div id="shoppingCart" class="right-nav">
+          <i class="fa-solid fa-cart-shopping">
+            <span
+              id="counter"
+              class="animate__animated animate__heartBeat"
+            ></span
+          ></i>
         </div>
       </nav>
     </header>
@@ -156,7 +165,7 @@
           <img
             id="bigImage"
             class="big-img-hoodie"
-            src="/img/hoodies-img/Hoodie(BrownPatched).jpg"
+            src="/img_improved/Hoodie (Brown Patched).webp"
             alt="heavyweight hoodie brun"
           />
         </div>
