@@ -33,6 +33,55 @@ document.addEventListener("DOMContentLoaded", function () {
     color4.style.border = "3px solid #A73828";
   });
 
+  // Get size option boxes
+  const sizeS = document.getElementById("sizeS");
+  const sizeM = document.getElementById("sizeM");
+  const sizeL = document.getElementById("sizeL");
+  const sizeXL = document.getElementById("sizeXL");
+  const sizeXXL = document.getElementById("sizeXXL");
+
+  // Function to add black color with white text
+  function setDefaultColor(element) {
+    element.style.backgroundColor = "black";
+    element.style.color = "white";
+  }
+
+  // Function to remove the default color
+  function removeDefaultColor(element) {
+    element.style.backgroundColor = "white";
+    element.style.color = "black";
+  }
+
+  // Function to toggle the color
+  function toggleColor(element) {
+    if (element.style.backgroundColor === "black") {
+      removeDefaultColor(element);
+    } else {
+      setDefaultColor(element);
+    }
+  }
+
+  // Add event listener for toggling the color on click
+  sizeS.addEventListener("click", function () {
+    toggleColor(sizeS);
+  });
+
+  sizeM.addEventListener("click", function () {
+    toggleColor(sizeM);
+  });
+
+  sizeL.addEventListener("click", function () {
+    toggleColor(sizeL);
+  });
+
+  sizeXL.addEventListener("click", function () {
+    toggleColor(sizeXL);
+  });
+
+  sizeXXL.addEventListener("click", function () {
+    toggleColor(sizeXXL);
+  });
+
   //   change hoodie place
   // Get the big image element
   const bigImage = document.getElementById("bigImage");
@@ -69,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   color4.addEventListener("click", function () {
-    changeBigImage("/img/hoodies-img/Hoodie (Brown Patched).jpg");
+    changeBigImage("/img improved/Hoodie (Brown Patched).webp");
   });
 
   // pop up close btn 👇
