@@ -15,30 +15,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
   color1.addEventListener("click", function () {
     removeBorders();
-    color1.style.border = "3px solid #A73828";
+    color1.style.border = "2px solid #000000";
   });
 
   color2.addEventListener("click", function () {
     removeBorders();
-    color2.style.border = "3px solid #A73828";
+    color2.style.border = "2px solid #000000";
   });
 
   color3.addEventListener("click", function () {
     removeBorders();
-    color3.style.border = "3px solid #A73828";
+    color3.style.border = "2px solid #000000";
   });
 
   color4.addEventListener("click", function () {
     removeBorders();
-    color4.style.border = "3px solid #A73828";
+    color4.style.border = "2px solid #000000";
   });
 
+  // Get size option boxes
   // Get size option boxes
   const sizeS = document.getElementById("sizeS");
   const sizeM = document.getElementById("sizeM");
   const sizeL = document.getElementById("sizeL");
   const sizeXL = document.getElementById("sizeXL");
   const sizeXXL = document.getElementById("sizeXXL");
+
+  // Get the span element that will display the selected size
+  const selectedSizeSpan = document.querySelector(".pop-size-s");
 
   // Function to add black color with white text
   function setDefaultColor(element) {
@@ -52,34 +56,41 @@ document.addEventListener("DOMContentLoaded", function () {
     element.style.color = "black";
   }
 
-  // Function to toggle the color
-  function toggleColor(element) {
-    if (element.style.backgroundColor === "black") {
-      removeDefaultColor(element);
-    } else {
-      setDefaultColor(element);
-    }
+  // Function to remove default color from all size options
+  function resetAllColors() {
+    removeDefaultColor(sizeS);
+    removeDefaultColor(sizeM);
+    removeDefaultColor(sizeL);
+    removeDefaultColor(sizeXL);
+    removeDefaultColor(sizeXXL);
   }
 
-  // Add event listener for toggling the color on click
+  // Function to set the selected color
+  function setSelectedColor(element, size) {
+    resetAllColors();
+    setDefaultColor(element);
+    selectedSizeSpan.textContent = size;
+  }
+
+  // Add event listeners for setting the selected color on click
   sizeS.addEventListener("click", function () {
-    toggleColor(sizeS);
+    setSelectedColor(sizeS, "S");
   });
 
   sizeM.addEventListener("click", function () {
-    toggleColor(sizeM);
+    setSelectedColor(sizeM, "M");
   });
 
   sizeL.addEventListener("click", function () {
-    toggleColor(sizeL);
+    setSelectedColor(sizeL, "L");
   });
 
   sizeXL.addEventListener("click", function () {
-    toggleColor(sizeXL);
+    setSelectedColor(sizeXL, "XL");
   });
 
   sizeXXL.addEventListener("click", function () {
-    toggleColor(sizeXXL);
+    setSelectedColor(sizeXXL, "XXL");
   });
 
   //   change hoodie place
@@ -118,20 +129,34 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   color4.addEventListener("click", function () {
-    changeBigImage("/img improved/Hoodie (Brown Patched).webp");
+    changeBigImage("/img_improved/Hoodie (Brown Patched).webp");
   });
 
-  // pop up close btn 👇
+  // pop up close btn and shopping cart  👇
 
+  const counter = document.getElementById("counter");
+  const btn = document.getElementById("btn");
+  const shoppingCart = document.getElementById("shoppingCart");
   const popUp = document.getElementById("popUp");
   const closeBtn = document.getElementById("closeBtn");
+
+  // hide counter
+  counter.style.display = "none";
+
+  btn.addEventListener("click", function () {
+    counter.style.display = "block";
+    counter.textContent = "1";
+  });
 
   popUp.style.display = "none";
   closeBtn.style.fontSize = "2Rem";
   closeBtn.style.fontSize = "2Rem";
   closeBtn.style.fontWeight = "bold";
 
-  btn.addEventListener("click", function () {
+  // btn.addEventListener("click", function () {
+  //   popUp.style.display = "block";
+  // });
+  shoppingCart.addEventListener("click", function () {
     popUp.style.display = "block";
   });
 

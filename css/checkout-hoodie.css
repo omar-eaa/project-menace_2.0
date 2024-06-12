@@ -20,7 +20,6 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    
 }
 
 header {
@@ -68,6 +67,17 @@ header nav {
 
 .right-nav i {
     font-size: 2.5rem;
+}
+
+#counter {
+    font-size: 1.5rem;
+    color: var(--fire-brick);
+    position: absolute;
+    left: 98%;
+    top: 9%;
+}
+#shoppingCart{
+    cursor: pointer;
 }
 
 
