@@ -408,29 +408,20 @@ header nav {
 
 .ig-img{
     height: auto;
-    width: 25%;
+    width: 20%;
 }
+
+.ig-img2{
+    height: auto;
+    width: 30%;  
+}
+
 .ig-img:hover{
     border-radius: 10px;
 }
 
 
 /* instagram  area 👆 */
-
-
-.info{
-    margin: 0 auto;
-    height: 100vh;
-    width: 60%;
-    right: 10%;
-    padding-top: 7%;
-    border-radius: 20px;
-}
-
-.info img {
-    max-width: 90%;
-    height: auto;
-}
 
 
 
@@ -647,7 +638,7 @@ header nav {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 4%;
-    margin-top: -2%;
+    margin-top: 2%;
     line-height: 1.6;
     font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
 
@@ -967,6 +958,7 @@ header nav {
         height: auto;
         width: 100%;
     }
+
     .menace {
         height: auto;
         width: 100%;
