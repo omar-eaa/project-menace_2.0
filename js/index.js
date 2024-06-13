@@ -50,6 +50,18 @@ function scrollContainerLeft() {
   container.scrollLeft -= 400; // Adjust the value to control the scroll amount
 }
 
+// bestseller produckt link path
+const hoodiePath = document.getElementById("hoodiePath");
+const tshirtPath = document.getElementById("tshirtPath");
+
+// bestseller produckt link path
+hoodiePath.addEventListener("click", function () {
+  window.location.href = "/html/checkout-hoodie.html";
+});
+tshirtPath.addEventListener("click", function () {
+  window.location.href = "/html/checkout-tshirt.html";
+});
+
 function scrollContainerRight() {
   const container = document.querySelector(".product-front-page");
   container.scrollLeft += 400; // Adjust the value to control the scroll amount
@@ -74,7 +86,7 @@ subscribeButton.addEventListener("click", function () {
 
 // Links and paths
 const links = [
-  { id: "tShirt", path: "/html/404.html" },
+  { id: "tShirt", path: "/html/tshirt.html" },
   { id: "jackets", path: "/html/404.html" },
   { id: "jeans", path: "/html/404.html" },
   { id: "jerseys", path: "/html/404.html" },
