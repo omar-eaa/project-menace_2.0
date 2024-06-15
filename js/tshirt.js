@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get the popup image element
   const popupImg = document.getElementById("popupImg");
 
+  // get cartcheckout.html tag element
+  const productImg = document.getElementById("productImg");
+
   // Function to remove borders from all color boxes
   function removeBorders() {
     color1.style.border = "none";
@@ -19,10 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
     color4.style.border = "none";
   }
 
-  // Function to change both big image and popup image
+  // Function to change big image, popup image, and product image in cartcheckout.html
   function changeImages(colorImgSrc) {
-    bigImage.src = colorImgSrc;
-    popupImg.src = colorImgSrc;
+    if (bigImage) bigImage.src = colorImgSrc;
+    if (popupImg) popupImg.src = colorImgSrc;
+    if (productImg) productImg.src = colorImgSrc;
   }
 
   // Add click event listeners to each color option

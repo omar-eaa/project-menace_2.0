@@ -44,20 +44,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document
+  .getElementById("checkout-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-document.getElementById('checkout-form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  
-  const firstName = document.getElementById('first-name').value;
-  const lastName = document.getElementById('last-name').value;
-  const email = document.getElementById('email').value;
-  const address = document.getElementById('address').value;
-  const postcode = document.getElementById('postcode').value;
-  const country = document.getElementById('country').value;
-  const phone = document.getElementById('phone').value;
-  const quantity = document.getElementById('quantity').value;
+    const firstName = document.getElementById("first-name").value;
+    const lastName = document.getElementById("last-name").value;
+    const email = document.getElementById("email").value;
+    const address = document.getElementById("address").value;
+    const postcode = document.getElementById("postcode").value;
+    const country = document.getElementById("country").value;
+    const phone = document.getElementById("phone").value;
+    const quantity = document.getElementById("quantity").value;
 
-  const orderDetails = {
+    const orderDetails = {
       firstName: firstName,
       lastName: lastName,
       email: email,
@@ -65,10 +66,10 @@ document.getElementById('checkout-form').addEventListener('submit', function(eve
       postcode: postcode,
       country: country,
       phone: phone,
-      quantity: quantity
-  };
+      quantity: quantity,
+    };
 
-  localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
+    localStorage.setItem("orderDetails", JSON.stringify(orderDetails));
 
-  // window.location.href = "/html/carthoodie";
-});
+    // window.location.href = "/html/carthoodie";
+  });
