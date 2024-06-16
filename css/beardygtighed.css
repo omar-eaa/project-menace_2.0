@@ -1,0 +1,210 @@
+/* titel font here 👇 
+font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fire-brick: rgb(167, 61, 40);
+    --special-grey: rgb(232, 232, 232);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    /* Center the content horizontally */
+    padding: 20px;
+    /* Add some padding for spacing */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute items evenly */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.left-nav ul {
+    display: flex;
+    /* Remove default list styles */
+    list-style: none;
+}
+
+.left-nav ul li {
+    /* Optional: Add some spacing between list items */
+    padding-right: 24px;
+    font-size: 1rem;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 700;
+    font-weight: 600;
+}
+
+.mid-nav h1 {
+    font-size: 2rem;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    padding-right: 300px;
+}
+
+.right-nav i {
+    font-size: 2.5rem;
+}
+
+
+/* styling drop down 👇 */
+
+/* shop👇 */
+
+.all-clothing__accessories-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    list-style: none;
+    padding-top: 3%;
+}
+.shop-nav-container {
+    display: flex;
+    /* align-items: stretch;  */
+    gap: 70%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    background-color: #e4e2e2;
+}
+
+.shop-left-area{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 3%;
+}
+
+.shop-right-area{
+    margin-left: 10%;
+}
+
+.all-clothing{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: bold;  
+    
+}
+.all-clothing-li{
+    padding-top: 5%;
+    
+}
+
+.shop-left-area {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    flex: 1; /* Allow flex-grow to fill the available space */
+}
+.shop-left-area ul li {
+    list-style: none;
+    padding-top: 10%;
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+}
+
+.shop-right-area{
+    padding-top: 3%;
+    padding-right: 16%;
+}
+
+
+.accessories{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: bold;  
+}
+
+.accessories-li{
+    padding-top: 5%;
+    
+}
+.accessories-li li{
+    list-style: none;
+    padding-top: 6%;
+}
+
+.all-clothing__accessories-container li{
+    color: grey;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+.all-clothing__accessories-container li:hover{
+    color: black;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+
+
+/* om os 👇 */
+.om-os-nav-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    background-color: #e4e2e2;
+}
+.om-os-nav-area{
+    display: flex;
+    gap: 20%;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-left: 35%;
+}
+
+
+.bæredygtighed{
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+}
+.vision-mission-vædier {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+}
+/* styling drop down 👆 */
+
+
+/* om-os færdig */
+
+#bear {
+   display: flex;
+   margin: 0 auto;
+   width: 80%;
+   padding-top: 5%;
+}
+
+
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+    gap: 10rem;
+}
+
+#stop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 900;
+    gap: 5rem;
+    margin-top: -15%;
+    font-size: 1.2rem;
+}
