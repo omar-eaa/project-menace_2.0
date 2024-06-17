@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get color option boxes
-  const color1 = document.getElementById("color1");
-  const color2 = document.getElementById("color2");
-  const color3 = document.getElementById("color3");
-  const color4 = document.getElementById("color4");
+  const tshirtColor1 = document.getElementById("tshirtColor1");
+  const tshirtColor2 = document.getElementById("tshirtColor2");
+  const tshirtColor3 = document.getElementById("tshirtColor3");
+  const tshirtColor4 = document.getElementById("tshirtColor4");
 
   // Get the big image element
   const bigImage = document.getElementById("bigImage");
@@ -14,43 +14,46 @@ document.addEventListener("DOMContentLoaded", function () {
   // get cartcheckout.html tag element
   const productImg = document.getElementById("productImg");
 
-  // Function to remove borders from all color boxes
-  function removeBorders() {
-    color1.style.border = "none";
-    color2.style.border = "none";
-    color3.style.border = "none";
-    color4.style.border = "none";
-  }
-
   // Function to change big image, popup image, and product image in cartcheckout.html
   function changeImages(colorImgSrc) {
     if (bigImage) bigImage.src = colorImgSrc;
     if (popupImg) popupImg.src = colorImgSrc;
     if (productImg) productImg.src = colorImgSrc;
+
+    // Store the selected image in localStorage
+    localStorage.setItem("selectedImage", colorImgSrc);
+  }
+
+  // Function to remove borders from all color boxes
+  function removeBorders() {
+    tshirtColor1.style.border = "none";
+    tshirtColor2.style.border = "none";
+    tshirtColor3.style.border = "none";
+    tshirtColor4.style.border = "none";
   }
 
   // Add click event listeners to each color option
-  color1.addEventListener("click", function () {
+  tshirtColor1.addEventListener("click", function () {
     removeBorders();
-    color1.style.border = "2px solid #000000";
+    tshirtColor1.style.border = "2px solid #000000";
     changeImages("/img/t-shirts-img/Menace Tee Mock Up_5.2 copy.png");
   });
 
-  color2.addEventListener("click", function () {
+  tshirtColor2.addEventListener("click", function () {
     removeBorders();
-    color2.style.border = "2px solid #000000";
+    tshirtColor2.style.border = "2px solid #000000";
     changeImages("/img/t-shirts-img/Menace Tee Mock Up_7.png");
   });
 
-  color3.addEventListener("click", function () {
+  tshirtColor3.addEventListener("click", function () {
     removeBorders();
-    color3.style.border = "2px solid #000000";
+    tshirtColor3.style.border = "2px solid #000000";
     changeImages("/img/t-shirts-img/MenaceTeeMockUp_5.4.png");
   });
 
-  color4.addEventListener("click", function () {
+  tshirtColor4.addEventListener("click", function () {
     removeBorders();
-    color4.style.border = "2px solid #000000";
+    tshirtColor4.style.border = "2px solid #000000";
     changeImages("/img/t-shirts-img/Menace Tee Mock Up_5 copy.png");
   });
 
@@ -141,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   btn.addEventListener("click", function () {
     counter.style.display = "block";
-    counter.textContent = "1";
+    counter.textContent = "⚫️";
   });
 
   popUp.style.display = "none";
