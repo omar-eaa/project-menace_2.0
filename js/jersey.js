@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get color option boxes
-  const hoodieColor1 = document.getElementById("hoodieColor1");
-  const hoodieColor2 = document.getElementById("hoodieColor2");
-  const hoodieColor3 = document.getElementById("hoodieColor3");
-  const hoodieColor4 = document.getElementById("hoodieColor4");
+  const jerseyColor1 = document.getElementById("jerseyColor1");
+  const jerseyColor2 = document.getElementById("jerseyColor2");
+  const jerseyColor3 = document.getElementById("jerseyColor3");
+  const jerseyColor4 = document.getElementById("jerseyColor4");
 
   // Get the big image element
   const bigImage = document.getElementById("bigImage");
@@ -26,35 +26,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to remove borders from all color boxes
   function removeBorders() {
-    hoodieColor1.style.border = "none";
-    hoodieColor2.style.border = "none";
-    hoodieColor3.style.border = "none";
-    hoodieColor4.style.border = "none";
+    jerseyColor1.style.border = "none";
+    jerseyColor2.style.border = "none";
+    jerseyColor3.style.border = "none";
+    jerseyColor4.style.border = "none";
   }
 
   // Add click event listeners to each color option
-  hoodieColor1.addEventListener("click", function () {
+  jerseyColor1.addEventListener("click", function () {
     removeBorders();
-    hoodieColor1.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Black Patched).webp");
+    jerseyColor1.style.border = "2px solid #000000";
+    changeImages("/img/jersey-img/Jersey Shirt Baby Blue.jpg");
   });
 
-  hoodieColor2.addEventListener("click", function () {
+  jerseyColor2.addEventListener("click", function () {
     removeBorders();
-    hoodieColor2.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Green Patched) copy.webp");
+    jerseyColor2.style.border = "2px solid #000000";
+    changeImages("/img/jersey-img/Jersey Shirt Orange.jpg");
   });
 
-  hoodieColor3.addEventListener("click", function () {
+  jerseyColor3.addEventListener("click", function () {
     removeBorders();
-    hoodieColor3.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Light Blue Patched).webp");
+    jerseyColor3.style.border = "2px solid #000000";
+    changeImages("/img/jersey-img/Jersey Shirt Black.jpg");
   });
 
-  hoodieColor4.addEventListener("click", function () {
+  jerseyColor4.addEventListener("click", function () {
     removeBorders();
-    hoodieColor4.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Brown Patched).webp");
+    jerseyColor4.style.border = "2px solid #000000";
+    changeImages("/img_improved/Retro Soccer Jersey front 3 index-kopi.png");
   });
 
   // Other existing code...
@@ -158,4 +158,6 @@ document.addEventListener("DOMContentLoaded", function () {
   closeBtn.addEventListener("click", function () {
     popUp.style.display = "none";
   });
+
+  console.log("Hello world");
 });

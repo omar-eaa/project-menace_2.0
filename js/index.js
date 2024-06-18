@@ -87,17 +87,24 @@ subscribeButton.addEventListener("click", function () {
 // Links and paths
 const links = [
   { id: "tShirt", path: "/html/tshirt.html" },
-  { id: "jackets", path: "/html/404.html" },
+  { id: "vintage", path: "/html/vintage.html" },
   { id: "jeans", path: "/html/404.html" },
-  { id: "jerseys", path: "/html/404.html" },
+  { id: "jerseys", path: "/html/jersey.html" },
   { id: "sweatshirts", path: "/html/404.html" },
   { id: "lookBook", path: "/html/lookbook.html" },
   { id: "baeredygtighed", path: "/html/404.html" },
   { id: "vMv", path: "/html/404.html" },
-  { id: "capCap", path: "/html/404.html" },
+  { id: "capCap", path: "/html/caps.html" },
   { id: "shopHereButton", path: "/html/hoodies.html" },
   { id: "shopHereButtonMobile", path: "/html/hoodies.html" },
   { id: "comingSoon", path: "/html/comming-soon.html" },
+  { id: "hoodiePath", path: "/html/hoodie-option.html" },
+  { id: "bestSellerTshirtBrown", path: "/html/checkout-tshirt.html" },
+  { id: "bestSellerCap", path: "/html/cap-option.html" },
+  { id: "bestSellerAllBlackCap", path: "/html/cap-option.html" },
+  { id: "bestSellerLightBlueHoodie", path: "/html/404.html" },
+  { id: "bestSellerRetroSoccerJersey", path: "/html/jersey-option.html" },
+  { id: "bestSellerVintageTshirt", path: "/html/vintage-option.html" },
 ];
 
 // Add event listeners for navigation

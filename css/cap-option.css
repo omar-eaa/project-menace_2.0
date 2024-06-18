@@ -1,0 +1,955 @@
+/* titel font here 👇 
+font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+:root {
+    --fire-brick: rgb(167, 61, 40);
+    --special-grey: rgb(232, 232, 232);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    position: sticky; /* Make header sticky */
+    padding: 20px;
+    top: 0;
+    z-index: 1000; /* Ensure header stays above other content */
+}
+.logo{
+    display: flex;
+    width: 35%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute items evenly */
+    align-items: center;
+    /* Center items vertically */
+}
+
+.left-nav ul {
+    display: flex;
+    /* Remove default list styles */
+    list-style: none;
+}
+
+.left-nav ul li {
+    /* Optional: Add some spacing between list items */
+    padding-right: 24px;
+    font-size: 1rem;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 700;
+    font-weight: 600;
+}
+
+.mid-nav h1 {
+    font-size: 2rem;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    padding-right: 300px;
+}
+
+.right-nav i {
+    font-size: 2.5rem;
+}
+
+#counter {
+    font-size: 1.5rem;
+    color: var(--fire-brick);
+    position: absolute;
+    left: 98%;
+    top: 9%;
+}
+#shoppingCart{
+    cursor: pointer;
+}
+
+
+/* styling drop down 👇 */
+
+/* shop👇 */
+
+.all-clothing__accessories-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    list-style: none;
+    padding-top: 3%;
+}
+.shop-nav-container {
+    display: flex;
+    /* align-items: stretch;  */
+    gap: 70%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    background-color: #e4e2e2;
+}
+
+.shop-left-area{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 3%;
+    
+}
+
+.shop-right-area{
+    margin-left: 10%;
+}
+
+.all-clothing{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: bold;  
+    
+}
+.all-clothing-li{
+    padding-top: 5%;
+    
+}
+
+.shop-left-area {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    flex: 1; /* Allow flex-grow to fill the available space */
+}
+.shop-left-area ul li {
+    list-style: none;
+    padding-top: 10%;
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+}
+
+.shop-right-area{
+    padding-top: 3%;
+    padding-right: 16%;
+}
+
+
+.accessories{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: bold;  
+}
+
+.accessories-li{
+    padding-top: 5%;
+    
+}
+.accessories-li li{
+    list-style: none;
+    padding-top: 6%;
+}
+
+.all-clothing__accessories-container li{
+    color: grey;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+.all-clothing__accessories-container li:hover{
+    color: black;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+
+
+/* om os 👇 */
+.om-os-nav-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    background-color: #e4e2e2;
+}
+.om-os-nav-area{
+    display: flex;
+    gap: 20%;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-left: 35%;
+}
+
+
+.bæredygtighed{
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+}
+.vision-mission-vædier {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+}
+/* styling drop down 👆 */
+
+
+
+
+/* shop👇 */
+
+.all-clothing__accessories-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    list-style: none;
+    padding-top: 3%;
+}
+.shop-nav-container {
+    display: flex;
+    /* align-items: stretch;  */
+    gap: 70%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    background-color: #e4e2e2;
+}
+
+.shop-left-area{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 3%;
+}
+
+.shop-right-area{
+    margin-left: 10%;
+}
+
+.all-clothing{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: bold;  
+    
+}
+.all-clothing-li{
+    padding-top: 5%;
+    
+}
+
+.shop-left-area {
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    flex: 1; /* Allow flex-grow to fill the available space */
+}
+.shop-left-area ul li {
+    list-style: none;
+    padding-top: 10%;
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+}
+
+.shop-right-area{
+    padding-top: 3%;
+    padding-right: 16%;
+}
+
+
+.accessories{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-weight: bold;  
+}
+
+.accessories-li{
+    padding-top: 5%;
+    
+}
+.accessories-li li{
+    list-style: none;
+    padding-top: 6%;
+}
+
+.all-clothing__accessories-container li{
+    color: grey;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+.all-clothing__accessories-container li:hover{
+    color: black;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+}
+
+
+/* om os 👇 */
+.om-os-nav-container{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    background-color: #e4e2e2;
+}
+.om-os-nav-area{
+    display: flex;
+    gap: 20%;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+    padding-top: 5%;
+    padding-left: 35%;
+}
+
+
+.bæredygtighed{
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+}
+.vision-mission-vædier {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
+}
+/* styling drop down 👆 */
+
+
+
+/* styling left area 👇 */
+.hoodie-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
+}
+.left-area{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    border: 6px solid #d9d9d9;
+    margin-bottom: 5% ;
+}
+.big-img{
+    border: 4px solid #d9d9d9;
+
+}
+
+.small-img1, .small-img2, .small-img3{
+    border: 4px solid #d9d9d9;
+
+}
+#back-link{
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+   
+  }
+.right-area{
+    display: flex;
+    flex-direction: column;
+}
+.big-img-hoodie{
+    height: auto;
+    width: 60vh;
+}
+.small-img-hoodie{
+    height: auto;
+    width: 20vh;
+}
+
+.small-img-hoodie-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* styling right area 👇 */
+.name-prise-moms-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name-prise-moms-container h1{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    color: black;
+}
+
+.name-prise-moms-container h2{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 1.5rem;
+    color: rgb(67, 66, 66);
+    font-weight: 400;
+}
+.name-prise-moms-container span{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 1rem;
+    color: rgb(67, 66, 66);
+    font-weight: 400;
+}
+
+
+
+.color-options-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+}
+
+.color-options-container h2{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 1.5rem;
+    color: rgb(67, 66, 66);
+ 
+}
+.color-container{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.color-box1{
+    width: 23px;
+    height: 20px;
+    background-color: #721D1D; 
+}
+.color-box2{
+    width: 23px;
+    height: 20px; 
+    background-color:#4790A2; 
+}
+.color-box3{
+    width: 23px;
+    height: 20px;
+    background-color: #2D4535; 
+}
+.color-box4{
+    width: 23px;
+    height: 20px;
+    background-color: #000; 
+}
+
+
+.size-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7%;
+}
+
+.s-m-l-x-xxl-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.size-container h2 {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 1.5rem;
+    color: rgb(67, 66, 66);
+}
+
+.size-s, .size-m, .size-l, .size-xl, .size-xxl {
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 1rem;
+    border: 2px solid #d9d9d9;
+    cursor: pointer;
+}
+.size-s:hover, .size-m:hover, .size-l:hover, .size-xl:hover, .size-xxl:hover{
+    background-color: black;
+    color: white;
+
+}
+
+
+
+.pay-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+}
+.checkout-button {
+    display: inline-block;
+    padding: 20px 35px;          /* Reduced padding for a smaller button */
+    background-color: black;    /* Set background to white */
+    color: white;               /* Text color */
+    font-size: 1rem;            /* Reduced font size */
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    border: 2px solid black;    
+    border-radius: 5px;        
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    width: 70%;                 /* Adjust width */
+}
+
+.checkout-button:hover {
+    background-color: rgb(146, 145, 145);
+    color: white;
+    border: 2px solid rgb(146, 145, 145);  
+    transform: scale(1.05);              /* Slightly enlarge button on hover */
+}
+
+.total-amount {
+    font-weight: bold;
+    font-size: 1rem;          /* Adjusted font size */
+}
+
+
+.pay-method-img{
+    height: auto;
+    width: 70%;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 20%;
+}
+.tekst-icon-container-1{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .tekst-icon-container-1 i{
+    font-size: 2rem;
+  }
+.tekst-icon-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.tekst-icon-container i{
+    font-size: 2rem;
+}
+
+.info-li{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+
+}
+
+.materiale-vaskeanvisninger-container p{
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 1.5rem;
+    color: rgb(67, 66, 66);
+    font-weight: 400;
+    padding-bottom: 4%;
+}
+.black-line{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+   
+}
+
+.shipping p{
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-size: 1.5rem;
+    color: rgb(67, 66, 66);
+    font-weight: 400;
+    padding-bottom: 4%;
+}
+.black-line{
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+   
+}
+
+
+.m-t-teskt{
+
+}
+
+.shopping-teskt{
+
+}
+/* styling right area 👆 */
+/* 
+
+*/
+
+/* styling left area 👆 */
+
+
+
+
+/* footer area 👇 */
+
+.footer-area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+.footer-tekst-container{
+    display: flex;
+    gap: 25%;
+    justify-content: center;
+}
+.line-black{
+  height: auto;
+   width: 90%;
+   padding-left: 10%;
+}
+
+
+.brand-container p{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    padding-bottom: 18%;
+    cursor: pointer;
+}
+.support-container p{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    padding-bottom: 5%;
+    cursor: pointer;
+}
+.juridiske-info-container p {
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    padding-bottom: 6%;
+    cursor: pointer;
+
+}
+.brand-container li, 
+.support-container li,
+.juridiske-info-container li {
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 15px;
+    list-style: none;
+    padding-top: 10%;
+    color: #989595;
+    cursor: pointer;
+    gap: 10ox;
+}
+
+
+.brand-container li:hover,
+.support-container li:hover,
+.juridiske-info-container li:hover {
+    /* Change text color on hover */
+    color: #000000;
+    /* Add any other styles you want to apply on hover */
+}
+
+.icons-container{
+    display: flex;
+    gap: 2%;
+    padding-left: 13%;
+    height: auto;
+    width: 150%;
+}
+
+
+
+
+/* footer area 👆 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hiding mobile nav */
+aside {
+    display: none;
+}
+.sidebar {
+    display: none;
+}
+
+/* for iphone 12 pro  */
+@media (max-width: 768px) {
+
+
+
+    /* hiding header destop nav */
+    header{
+       display: none;
+   }
+       
+   
+      
+   
+       
+   
+   
+   
+   aside {
+    display: block;
+      top: 0;
+    
+    }
+ 
+    .sidebar {
+         display: block;
+        position: sticky; 
+    }
+   
+    .logo-mobile{
+        display: flex;
+        width: 97%;
+        padding-left: 30%;
+    }
+    .logo {
+      display: flex;
+    width: 35%;
+    }
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+       
+    }
+
+    aside {
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .burger-menu {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .burger-icon {
+        display: inline-block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        position: relative;
+    }
+
+    .burger-icon::before,
+    .burger-icon::after {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        position: absolute;
+    }
+
+    .burger-icon::before {
+        top: -8px;
+    }
+
+    .burger-icon::after {
+        top: 8px;
+    }
+
+    .mid-nav h1 {
+        margin: 0;
+        font-size: 1.5em;
+    }
+
+    .right-nav i {
+        font-size: 1.5em;
+    }
+
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        z-index: 1;
+    }
+
+    .sidebar .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 36px;
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .sidebar-menu {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .sidebar-menu li {
+        padding: 8px 16px;
+    }
+
+    .sidebar-menu li a {
+        text-decoration: none;
+        font-size: 25px;
+        color: #fff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidebar-menu li a:hover {
+        color: #f1f1f1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* checkout hoodie styling  */
+
+
+   .left-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: 6px solid #d9d9d9;
+    margin-top: 10%;
+    margin-right: 1%;
+    margin-bottom: 0% ;
+}
+.right-area{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-top: 2%;
+    margin-top: 5%;
+}
+.small-img-hoodie-container{
+    display: flex;
+    flex-direction: row;
+}
+.big-img-hoodie{
+    width: 35vh;
+}
+.small-img-hoodie{
+    width: 11vh;
+}
+
+
+
+   .hoodie-container{
+    margin-top: 12%;
+    flex-direction: column;
+    gap: 2rem;
+
+   }
+  .info-container{
+    margin-top: 12%;
+  }
+
+  .black-line {
+    width: 88%;
+  }
+
+  .tekst-icon-container-1{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .tekst-icon-container-1 i{
+    font-size: 2rem;
+    padding-right: 20%;
+  }
+
+  .tekst-icon-container i{
+    font-size: 2rem;
+    padding-left: 12%;
+  }
+
+
+/* pop up */
+
+.checkout-pop-up-container{
+    margin-right: 60px;
+}
+
+
+
+
+/* footer */
+  .footer-area {
+    padding-top: 40%;
+}
+.footer-tekst-container{
+    flex-direction: column;
+margin-left: 34%;
+margin-bottom: 37%;
+}
+.support-container{
+    padding-top: 25%;
+}
+.juridiske-info-container{
+    padding-top: 25%;
+}
+.icons-container {
+    margin-top: -122px;
+margin-bottom: 31%;
+}
+
+
+}
+   

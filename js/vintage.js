@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get color option boxes
-  const hoodieColor1 = document.getElementById("hoodieColor1");
-  const hoodieColor2 = document.getElementById("hoodieColor2");
-  const hoodieColor3 = document.getElementById("hoodieColor3");
-  const hoodieColor4 = document.getElementById("hoodieColor4");
+  const vintageColor1 = document.getElementById("vintageColor1");
+  const vintageColor2 = document.getElementById("vintageColor2");
+  const vintageColor3 = document.getElementById("vintageColor3");
+  const vintageColor4 = document.getElementById("vintageColor4");
 
   // Get the big image element
   const bigImage = document.getElementById("bigImage");
@@ -26,35 +26,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to remove borders from all color boxes
   function removeBorders() {
-    hoodieColor1.style.border = "none";
-    hoodieColor2.style.border = "none";
-    hoodieColor3.style.border = "none";
-    hoodieColor4.style.border = "none";
+    vintageColor1.style.border = "none";
+    vintageColor2.style.border = "none";
+    vintageColor3.style.border = "none";
+    vintageColor4.style.border = "none";
   }
 
   // Add click event listeners to each color option
-  hoodieColor1.addEventListener("click", function () {
+  vintageColor1.addEventListener("click", function () {
     removeBorders();
-    hoodieColor1.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Black Patched).webp");
+    vintageColor1.style.border = "2px solid #000000";
+    changeImages("/img/t-shirts-img/vintage-tee_1.png");
   });
 
-  hoodieColor2.addEventListener("click", function () {
+  vintageColor2.addEventListener("click", function () {
     removeBorders();
-    hoodieColor2.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Green Patched) copy.webp");
+    vintageColor2.style.border = "2px solid #000000";
+    changeImages("/img/t-shirts-img/vintage-tee_2.png");
   });
 
-  hoodieColor3.addEventListener("click", function () {
+  vintageColor3.addEventListener("click", function () {
     removeBorders();
-    hoodieColor3.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Light Blue Patched).webp");
+    vintageColor3.style.border = "2px solid #000000";
+    changeImages("/img/t-shirts-img/vintage-tee copy.png");
   });
 
-  hoodieColor4.addEventListener("click", function () {
+  vintageColor4.addEventListener("click", function () {
     removeBorders();
-    hoodieColor4.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Brown Patched).webp");
+    vintageColor4.style.border = "2px solid #000000";
+    changeImages("/img/t-shirts-img/vintage-tee_3copy.png");
   });
 
   // Other existing code...

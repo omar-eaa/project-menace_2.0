@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Get color option boxes
-  const hoodieColor1 = document.getElementById("hoodieColor1");
-  const hoodieColor2 = document.getElementById("hoodieColor2");
-  const hoodieColor3 = document.getElementById("hoodieColor3");
-  const hoodieColor4 = document.getElementById("hoodieColor4");
+  const capColor1 = document.getElementById("capColor1");
+  const capColor2 = document.getElementById("capColor2");
+  const capColor3 = document.getElementById("capColor3");
+  const capColor4 = document.getElementById("capColor4");
 
   // Get the big image element
   const bigImage = document.getElementById("bigImage");
@@ -26,35 +26,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to remove borders from all color boxes
   function removeBorders() {
-    hoodieColor1.style.border = "none";
-    hoodieColor2.style.border = "none";
-    hoodieColor3.style.border = "none";
-    hoodieColor4.style.border = "none";
+    capColor1.style.border = "none";
+    capColor2.style.border = "none";
+    capColor3.style.border = "none";
+    capColor4.style.border = "none";
   }
 
   // Add click event listeners to each color option
-  hoodieColor1.addEventListener("click", function () {
+  capColor1.addEventListener("click", function () {
     removeBorders();
-    hoodieColor1.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Black Patched).webp");
+    capColor1.style.border = "2px solid #000000";
+    changeImages("/img/caps/Cap Mockup Front (All Red).png");
   });
 
-  hoodieColor2.addEventListener("click", function () {
+  capColor2.addEventListener("click", function () {
     removeBorders();
-    hoodieColor2.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Green Patched) copy.webp");
+    capColor2.style.border = "2px solid #000000";
+    changeImages("/img/caps/Cap Mockup Front (All Light Blue).png");
   });
 
-  hoodieColor3.addEventListener("click", function () {
+  capColor3.addEventListener("click", function () {
     removeBorders();
-    hoodieColor3.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Light Blue Patched).webp");
+    capColor3.style.border = "2px solid #000000";
+    changeImages("/img/caps/Cap Mockup Front (All Green).png");
   });
 
-  hoodieColor4.addEventListener("click", function () {
+  capColor4.addEventListener("click", function () {
     removeBorders();
-    hoodieColor4.style.border = "2px solid #000000";
-    changeImages("/img_improved/Hoodie (Brown Patched).webp");
+    capColor4.style.border = "2px solid #000000";
+    changeImages("/img_improved/Cap_Front_BlackWhite_Stiching.webp");
   });
 
   // Other existing code...
@@ -158,4 +158,6 @@ document.addEventListener("DOMContentLoaded", function () {
   closeBtn.addEventListener("click", function () {
     popUp.style.display = "none";
   });
+
+  console.log("Hello world");
 });
