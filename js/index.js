@@ -102,7 +102,7 @@ const links = [
   { id: "bestSellerTshirtBrown", path: "/html/checkout-tshirt.html" },
   { id: "bestSellerCap", path: "/html/cap-option.html" },
   { id: "bestSellerAllBlackCap", path: "/html/cap-option.html" },
-  { id: "bestSellerLightBlueHoodie", path: "/html/404.html" },
+  { id: "bestSellerLightBlueHoodie", path: "/html/hoodie-option.html" },
   { id: "bestSellerRetroSoccerJersey", path: "/html/jersey-option.html" },
   { id: "bestSellerVintageTshirt", path: "/html/vintage-option.html" },
 ];

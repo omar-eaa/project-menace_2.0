@@ -63,6 +63,8 @@ header nav {
 .logo {
    display: flex;
    width: 35%;
+   margin: 0 auto;
+   margin-left: 14%;
 }
 
 .right-nav i {
@@ -436,9 +438,9 @@ header nav {
 }
 .footer-tekst-container{
     display: flex;
-    gap: 14%;
+    gap: 88%;
     justify-content: center;
-    padding-right: 45%;
+    margin: 0 auto;
     padding-top: 2%;
 }
 .line-black{
@@ -487,24 +489,14 @@ header nav {
     /* Add any other styles you want to apply on hover */
 }
 
-.icons-container{
+.icons-container {
     display: flex;
     gap: 2%;
-    padding-left: 4%;
-    height: auto;
-    width: 150%;
-    padding-top: 3%;
+    padding-left: 12.5%;
 }
-
-.icons-container h1{
-    display: flex;
-    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
-    font-size: 2rem;
-    /* Adjust paragraph font size */
-    margin-bottom: 20px;
-    color: #000000;
-    
-   
+.insta{
+    text-decoration: none;
+    color: inherit;
 }
 
 
