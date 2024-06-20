@@ -92,7 +92,7 @@ const links = [
   { id: "jerseys", path: "/html/jersey.html" },
   { id: "sweatshirts", path: "/html/404.html" },
   { id: "lookBook", path: "/html/lookbook.html" },
-  { id: "baeredygtighed", path: "/html/404.html" },
+  { id: "baeredygtighed", path: "/html/bearedygtighed.html" },
   { id: "vMv", path: "/html/404.html" },
   { id: "capCap", path: "/html/caps.html" },
   { id: "shopHereButton", path: "/html/hoodies.html" },
