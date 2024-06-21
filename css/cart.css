@@ -21,6 +21,10 @@ body {
   
 }
 
+.final-page-h1{
+  font-size: 1.7rem;
+}
+
 header {
   background-color: white;
   text-align: center;
