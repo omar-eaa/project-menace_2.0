@@ -321,8 +321,24 @@ header nav {
     }
 
     .icons-container {
-        margin-top: -122px;
-        margin-bottom: 10%;
+        margin-top: -140px;
+        padding-left: 5.5%;
+    }
+
+    .icon-container{
+        display: flex;
+        justify-content: center; /* Center icons horizontally */
+        gap: 10px; /* Adjust the gap between icons */
+        padding: 20px;
+        font-size: 2rem;
+    }
+
+    #stop{
+        display: flex;
+        justify-content: center; /* Center icons horizontally */
+        gap: 10px; /* Adjust the gap between icons */
+        padding: 20px;
+        font-size: 0.5rem;
     }
 }
 
