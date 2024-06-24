@@ -13,11 +13,17 @@ font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
     --special-grey: rgb(232, 232, 232);
 }
 
+.mid-nav img {
+    display: flex;
+    width: 28%;
+    margin: 0 auto;
+    margin-left: 34%;
+}
+
 body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    
 }
 
 header {
@@ -62,18 +68,18 @@ header nav {
     font-size: 2.5rem;
 }
 
-
 /* styling drop down 👇 */
 
 /* shop👇 */
 
-.all-clothing__accessories-container{
+.all-clothing__accessories-container {
     display: flex;
     flex-direction: row;
     gap: 20%;
     list-style: none;
     padding-top: 3%;
 }
+
 .shop-nav-container {
     display: flex;
     /* align-items: stretch;  */
@@ -83,25 +89,25 @@ header nav {
     background-color: #e4e2e2;
 }
 
-.shop-left-area{
+.shop-left-area {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
     padding-left: 3%;
 }
 
-.shop-right-area{
+.shop-right-area {
     margin-left: 10%;
 }
 
-.all-clothing{
-    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
-    font-weight: bold;  
-    
+.all-clothing {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
 }
-.all-clothing-li{
+
+.all-clothing-li {
     padding-top: 5%;
-    
 }
 
 .shop-left-area {
@@ -110,52 +116,55 @@ header nav {
     padding-top: 3%;
     flex: 1; /* Allow flex-grow to fill the available space */
 }
+
 .shop-left-area ul li {
     list-style: none;
     padding-top: 10%;
-    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
 }
 
-.shop-right-area{
+.shop-right-area {
     padding-top: 3%;
     padding-right: 16%;
 }
 
-
-.accessories{
-    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
-    font-weight: bold;  
+.accessories {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
+    font-weight: bold;
 }
 
-.accessories-li{
+.accessories-li {
     padding-top: 5%;
-    
 }
-.accessories-li li{
+
+.accessories-li li {
     list-style: none;
     padding-top: 6%;
 }
 
-.all-clothing__accessories-container li{
+.all-clothing__accessories-container li {
     color: grey;
     font-family: "fractul-variable", sans-serif;
     font-variation-settings: 'wght' 400;
 }
-.all-clothing__accessories-container li:hover{
+
+.all-clothing__accessories-container li:hover {
     color: black;
     font-family: "fractul-variable", sans-serif;
     font-variation-settings: 'wght' 400;
 }
 
-
 /* om os 👇 */
-.om-os-nav-container{
+.om-os-nav-container {
     display: flex;
     justify-content: center;
     padding-bottom: 5%;
     background-color: #e4e2e2;
 }
-.om-os-nav-area{
+
+.om-os-nav-area {
     display: flex;
     gap: 20%;
     font-family: "fractul-variable", sans-serif;
@@ -165,12 +174,12 @@ header nav {
     padding-left: 35%;
 }
 
-
-.bæredygtighed{
+.bæredygtighed {
     font-family: "fractul-variable", sans-serif;
     font-variation-settings: 'wght' 400;
     font-weight: bold;
 }
+
 .vision-mission-vædier {
     font-family: "fractul-variable", sans-serif;
     font-variation-settings: 'wght' 400;
@@ -178,84 +187,84 @@ header nav {
 }
 /* styling drop down 👆 */
 
-
 /* om-os færdig */
-
-#bear {
-   display: flex;
-   margin: 0 auto;
-   width: 60%;
-   padding-top: 5%;
-   border-radius: 10%;
-}
-
 
 
 .icon-container {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    padding-top: 10%;
+    padding-top: 3%;
     padding-bottom: 8%;
     gap: 5rem;
     margin: 0 auto;
     justify-content: center;
+    font-size: 4rem;
 }
+
 
 #stop {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    /* font-weight: 900; */
-    gap: 2rem;
-    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: -5%;
     padding-bottom: 54px;
+    line-height: 1.8rem;
+    font-family: "fractul-variable", sans-serif;
 }
 
-
-.footer-area{
+.footer-area {
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 1rem;
     padding-bottom: 3%;
 }
-.footer-tekst-container{
+
+.footer-tekst-container {
     display: flex;
     gap: 88%;
     justify-content: center;
     margin: 0 auto;
     padding-top: 2%;
 }
-.line-black{
-  height: auto;
-   width: 100%;
+
+.line-black {
+    height: auto;
+    width: 100%;
 }
 
-
-.brand-container p{
-    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+.brand-container p {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
     font-size: 2rem;
     padding-bottom: 18%;
     cursor: pointer;
 }
-.support-container p{
-    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+
+.support-container p {
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
     font-size: 2rem;
     padding-bottom: 5%;
     cursor: pointer;
 }
+
 .juridiske-info-container p {
-    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
     font-size: 2rem;
     padding-bottom: 6%;
     cursor: pointer;
-
 }
-.brand-container li, 
+
+.brand-container li,
 .support-container li,
 .juridiske-info-container li {
-    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-family: "fractul-variable", sans-serif;
+    font-variation-settings: 'wght' 400;
     font-size: 15px;
     list-style: none;
     padding-top: 10%;
@@ -263,7 +272,6 @@ header nav {
     cursor: pointer;
     gap: 10px;
 }
-
 
 .brand-container li:hover,
 .support-container li:hover,
@@ -278,10 +286,59 @@ header nav {
     gap: 2%;
     padding-left: 12.5%;
 }
-.insta{
+
+.insta {
     text-decoration: none;
     color: inherit;
 }
+
+
+/* Shine Effect */
+.image-container {
+    display: inline-block;
+    background: url('/path/to/your/concrete-cracks-background.jpg') no-repeat center center; /* Tilføj baggrundsbillede */
+    background-size: cover; /* Skaler baggrundsbilledet til at dække hele containeren */
+    padding: 20px; /* Afstand omkring billedet */
+    border-radius: 10px; /* Bløde hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge for en mere fremtrædende effekt */
+    position: relative;
+    overflow: hidden;
+}
+
+#bear {
+    display: block;
+    max-width: 60%;
+    padding-left: 5%;
+    height: auto;
+    border-radius: 10px; /* Samme radius som containeren for en ensartet effekt */
+    transition: transform 0.5s ease, filter 0.5s ease;
+    margin: 0 auto;
+}
+
+
+.image-container2 {
+    display: inline-block;
+    background-color: #ffffff; /* Rustik grålig farve */
+    padding: 20px; /* Afstand omkring billedet */
+    border-radius: 10px; /* Bløde hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge for en mere fremtrædende effekt */
+    position: relative;
+    overflow: hidden;
+
+}
+
+.image-container3 {
+    display: inline-block;
+    background-color: #ffffff; /* Rustik grålig farve */
+    padding: 20px; /* Afstand omkring billedet */
+    border-radius: 10px; /* Bløde hjørner */
+    box-shadow: 0 4px 8opx rgba(0, 0, 0, 0.1); /* Let skygge for en mere fremtrædende effekt */
+    position: relative;
+    overflow: hidden;
+
+}
+
+
 
 
 
@@ -289,19 +346,80 @@ header nav {
     .footer-area {
         padding-top: 26%;
     }
-    .footer-tekst-container{
+
+    .footer-tekst-container {
         flex-direction: column;
-    margin-left: 5%;
-    margin-bottom: 37%;
+        margin-left: 5%;
+        margin-bottom: 37%;
     }
-    .support-container{
+
+    .support-container {
         padding-top: 10%;
     }
-    .juridiske-info-container{
+
+    .juridiske-info-container {
         padding-top: 25%;
     }
+
     .icons-container {
-        margin-top: -122px;
-    margin-bottom: 10%;
+        padding-left: 35%;
+        gap: 2rem;
     }
+
+    .icon-container{
+        display: flex;
+        justify-content: center; /* Center icons horizontally */
+        gap: 10px; /* Adjust the gap between icons */
+        padding: 20px;
+        font-size: 2rem;
+    }
+
+    #stop{
+        display: flex;
+        justify-content: center; /* Center icons horizontally */
+        gap: 10px; /* Adjust the gap between icons */
+        padding: 20px;
+        font-size: 0.5rem;
+    }
+
+    .brand-container p {
+        font-family: "fractul-variable", sans-serif;
+        font-variation-settings: 'wght' 400;
+        font-size: 1.2rem;
+        padding-bottom: 2%; 
+        align-items:end;
+    }
+
+    .support-container p {
+        font-family: "fractul-variable", sans-serif;
+        font-variation-settings: 'wght' 400;
+        font-size: 1.2rem;
+        padding-bottom: 2%; 
+        padding-top: 10%;
+    }
+    
+    .juridiske-info-container p {
+      font-family: "fractul-variable", sans-serif;
+        font-variation-settings: 'wght' 400;
+        font-size: 1.2rem;
+        padding-bottom: 2%; 
+    }
+
+    .footer-area {
+        display: flex;
+        gap: 1rem;
+        padding-bottom: 3%;
+        text-align: center;
+        padding-top: 0%;
+    }
+    
+    .footer-tekst-container {
+        display: flex;
+        gap: 88%;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 2%;
+    }
+
 }
+
