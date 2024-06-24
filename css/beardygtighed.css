@@ -189,18 +189,11 @@ header nav {
 
 /* om-os færdig */
 
-#bear {
-    display: flex;
-    margin: 0 auto;
-    width: 60%;
-    padding-top: 2%;
-    padding-bottom: -20%;
-}
 
 .icon-container {
     display: flex;
     flex-direction: row;
-    padding-top: 10%;
+    padding-top: 3%;
     padding-bottom: 8%;
     gap: 5rem;
     margin: 0 auto;
@@ -299,6 +292,56 @@ header nav {
     color: inherit;
 }
 
+
+/* Shine Effect */
+.image-container {
+    display: inline-block;
+    background: url('/path/to/your/concrete-cracks-background.jpg') no-repeat center center; /* Tilføj baggrundsbillede */
+    background-size: cover; /* Skaler baggrundsbilledet til at dække hele containeren */
+    padding: 20px; /* Afstand omkring billedet */
+    border-radius: 10px; /* Bløde hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge for en mere fremtrædende effekt */
+    position: relative;
+    overflow: hidden;
+}
+
+#bear {
+    display: block;
+    max-width: 60%;
+    padding-left: 5%;
+    height: auto;
+    border-radius: 10px; /* Samme radius som containeren for en ensartet effekt */
+    transition: transform 0.5s ease, filter 0.5s ease;
+    margin: 0 auto;
+}
+
+
+.image-container2 {
+    display: inline-block;
+    background-color: #ffffff; /* Rustik grålig farve */
+    padding: 20px; /* Afstand omkring billedet */
+    border-radius: 10px; /* Bløde hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge for en mere fremtrædende effekt */
+    position: relative;
+    overflow: hidden;
+
+}
+
+.image-container3 {
+    display: inline-block;
+    background-color: #ffffff; /* Rustik grålig farve */
+    padding: 20px; /* Afstand omkring billedet */
+    border-radius: 10px; /* Bløde hjørner */
+    box-shadow: 0 4px 8opx rgba(0, 0, 0, 0.1); /* Let skygge for en mere fremtrædende effekt */
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+
+
 @media (max-width: 768px) {
     .footer-area {
         padding-top: 26%;
@@ -319,8 +362,8 @@ header nav {
     }
 
     .icons-container {
-        margin-top: -200px;
-        padding-left: 5%;
+        padding-left: 35%;
+        gap: 2rem;
     }
 
     .icon-container{
@@ -344,6 +387,7 @@ header nav {
         font-variation-settings: 'wght' 400;
         font-size: 1.2rem;
         padding-bottom: 2%; 
+        align-items:end;
     }
 
     .support-container p {
@@ -361,38 +405,21 @@ header nav {
         padding-bottom: 2%; 
     }
 
+    .footer-area {
+        display: flex;
+        gap: 1rem;
+        padding-bottom: 3%;
+        text-align: center;
+        padding-top: 0%;
+    }
+    
+    .footer-tekst-container {
+        display: flex;
+        gap: 88%;
+        justify-content: center;
+        margin: 0 auto;
+        padding-top: 2%;
+    }
+
 }
 
-/* Shine Effect */
-.shine-effect {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.shine-effect img {
-    display: flex;
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-
-.shine-effect::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, 25%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.1) 75%);
-    transform: rotate(45deg);
-    transition: transform 0.5s ease;
-}
-
-.shine-effect:hover::before {
-    transform: translate(150%, 150%);
-}
-
-.shine-effect:hover img {
-    transform: scale(1.05);
-    filter: brightness(1.2);
-}
