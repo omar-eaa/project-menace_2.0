@@ -252,6 +252,82 @@ aside {
     display: none
 }
 
+
+/* footer area 👇 */
+
+.footer-area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 3%;
+}
+.footer-tekst-container{
+    display: flex;
+    gap: 88%;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+.line-black{
+  height: auto;
+   width: 100%;
+}
+
+
+.brand-container p{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    padding-bottom: 18%;
+    cursor: pointer;
+}
+.support-container p{
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    padding-bottom: 5%;
+    cursor: pointer;
+}
+.juridiske-info-container p {
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 2rem;
+    padding-bottom: 6%;
+    cursor: pointer;
+
+}
+.brand-container li, 
+.support-container li,
+.juridiske-info-container li {
+    font-family: "fractul-variable",sans-serif; font-variation-settings: 'wght' 400;
+    font-size: 15px;
+    list-style: none;
+    padding-top: 10%;
+    color: #989595;
+    cursor: pointer;
+    gap: 10px;
+}
+
+
+.brand-container li:hover,
+.support-container li:hover,
+.juridiske-info-container li:hover {
+    /* Change text color on hover */
+    color: #000000;
+    /* Add any other styles you want to apply on hover */
+}
+
+.icons-container {
+    display: flex;
+    gap: 2%;
+    padding-left: 12.5%;
+}
+.insta{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* footer area 👆 */
+
+
 @media (max-width:768px) {
     header {
         display: none
